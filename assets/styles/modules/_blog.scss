@@ -1,0 +1,58 @@
+.blog{
+  &-outline {
+  @extend .my-6;
+  }
+
+  &-search {
+    @extend .pt-6;
+    width: 20rem;
+  }
+
+  &-content {
+    & h1 {
+      @extend .title;
+      font-size: 2.8rem;
+      font-weight: 200;
+    }
+    & h2 {
+      @extend .title;
+      @extend .is-2;
+      font-weight: 200;
+    }
+    & h3 {
+      @extend .title;
+      @extend .is-3;
+      font-weight: 200;
+    }
+    & h4 {
+      @extend .title;
+      @extend .is-4;
+      font-weight: 200;
+    }
+    & h5 {
+      @extend .title;
+      @extend .is-5;
+      font-weight: 200;
+    }
+    & h6 {
+      @extend .title;
+      @extend .is-6;
+      font-weight: 200;
+    }
+    & p {
+      padding-bottom: 3rem;
+    }
+  }
+
+  &-card {
+    &-h100p {
+      height: 100%;
+      min-height: 300px;
+    }
+  }
+
+  &-icon {
+    @extend .mr-2;
+    vertical-align: baseline !important;
+  }
+}

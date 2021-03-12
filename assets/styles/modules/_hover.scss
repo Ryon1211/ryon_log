@@ -1,0 +1,14 @@
+.hover-effect {
+  &-card {
+    transition: all .5s;
+    &:hover {
+      transform: scale(1.01) translateY(-.2rem);
+      box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .5);
+    }
+  }
+  &-tag {
+    &:hover {
+      text-decoration: underline;  
+    }  
+  }  
+}
