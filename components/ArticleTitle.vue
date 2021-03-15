@@ -1,7 +1,7 @@
 <template>
       <div class="container">
         <div class="columns is-justify-content-center">
-          <div class="column is-8 py-6 px-3">   
+          <div class="column is-8 section">   
             <h1 class="title is-3">{{ post.fields.title }}</h1>
             <p class="subtitle is-4">{{ post.fields.subTitle }}</p>
             <div>
