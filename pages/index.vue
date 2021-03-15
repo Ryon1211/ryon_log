@@ -41,7 +41,7 @@ export default {
 
     head() {
       return {
-        title: `Page${this.$route.params.page} | Ryon Log`,
+        title: 'Ryon Log',
         meta: [{
           hid: 'description',
           name: 'description',
