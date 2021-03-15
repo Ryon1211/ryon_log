@@ -4,7 +4,7 @@
       <div class="card pb-3 blog-card-h100p hover-effect-card">
           <nuxt-link :to="`/blog/${post.fields.slug}`">
             <div class="card-image">
-              <figure class="image is-16by9">
+              <figure class="image is-3by1">
                 <img class="is-objectfit" :src="$assetUrl(post.fields.headBanner)" alt="Placeholder image">
               </figure>
             </div>
