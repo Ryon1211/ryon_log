@@ -16,7 +16,9 @@
             九州出身で現在は試される大地にてWeb系とは畑違いのお仕事してます。
           </p>
           <div class="block">
-            <fa class="blog-icon" :icon="['fab','github']" size="2x" area-hidden="true" />
+            <a href="https://github.com/Ryon1211" target="_blank">
+             <fa class="blog-icon" :icon="['fab','github']" size="2x" area-hidden="true" />
+            </a>
           </div>
         </div>
       </div>
