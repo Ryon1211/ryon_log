@@ -54,6 +54,10 @@ body {
   }
 }
 
+.breadcrumb-fontsize {
+  font-size: 0.85rem;
+}
+
 a.navbar-item, .navbar-link{
   &:focus, :focus-within, .is-active{
   background-color: transparent;
