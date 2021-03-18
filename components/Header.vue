@@ -7,7 +7,7 @@
             <span class="title pl-3" style="line-height: normal">{{ this.title }}</span>
           </nuxt-link>
           <a @click.prevent="isMenuActive = !isMenuActive" 
-            :class="[ isMobile && isMenuActive ? 'is-active': '']" 
+            :class="[ $store.state.isMobile && isMenuActive ? 'is-active': '']" 
             role="button"
             class="navbar-burger"
             aria-label="menu"
@@ -17,7 +17,7 @@
             <span aria-hidden="true"></span>
           </a>
         </div>
-        <div class="navbar-menu" :class="[ isMobile && isMenuActive ? 'is-active': '']">
+        <div class="navbar-menu" :class="[ $store.state.isMobile && isMenuActive ? 'is-active': '']">
           <ul class="navbar-end">
             <li v-for="item in this.items" :key="item.title">
               <nuxt-link
@@ -38,7 +38,6 @@
 </template>
 <script>
   export default {
-    props:['isMobile'],
     data(){
       return {
         isMenuActive: false,
@@ -58,7 +57,7 @@
 
     methods: {
       roterPush(event) {
-        if(this.isMobile) {
+        if(this.$store.state.isMobile) {
           this.$router.push({ path: event.target.pathname })
           this.isMenuActive = false;
 

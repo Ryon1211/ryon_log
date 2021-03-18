@@ -70,7 +70,6 @@ a.navbar-item:hover{
   transition: all .3s;
 }
 
-
 @media screen and (max-width: 1023px){
   .navbar-menu{
     display: block;
@@ -85,4 +84,10 @@ a.navbar-item:hover{
         transition: transform .3s;
     }
   }
+
+  .content-wrapper {
+    padding-left: .5rem !important;
+    padding-right: .5rem !important;
+  }
+
 }

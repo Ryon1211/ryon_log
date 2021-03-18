@@ -6,7 +6,7 @@
       <ArticleContainer :post="post" />
     </div>
     <Tags :tags="tags" />
-    <Breadcrumb :props="post"/>
+    <Breadcrumb :props="post" />
   </main>
 </template>
 
@@ -21,7 +21,7 @@ export default {
       tags
     }
   },
-
+  
   head() {
     return {
       title: `${ this.post.fields.title } | Ryon Log`,

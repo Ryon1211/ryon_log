@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header :isMobile=isMobile />
+    <Header />
     <Nuxt />
     <Footer />
   </div>  
@@ -10,12 +10,12 @@
 export default {
   data() {
     return {
-      isMobile: false,
+      // isMobile: false,
     }
   },
   methods: {
     widthHandler() {
-      this.isMobile = window.innerWidth <= 1023 ? true : false
+      this.$store.commit('changeIsMobile',window.innerWidth <= 1023 ? true : false)
     }
   },
   created() {

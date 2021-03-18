@@ -56,3 +56,13 @@
     vertical-align: baseline !important;
   }
 }
+
+@media screen and (max-width: 1023px){
+.blog{  
+    &-card {
+      &-h100p {
+        min-height: auto;
+      }
+    }
+  }
+}

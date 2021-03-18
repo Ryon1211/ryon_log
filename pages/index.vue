@@ -23,7 +23,6 @@ export default {
     const tags = await $getContent.getTags();
     const latestPosts = await $getContent.getPosts('blog',{ 
         limit: $limit.maxLimit,
-        // limit: 1,
     });
 
     return {

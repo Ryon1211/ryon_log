@@ -1,5 +1,5 @@
-<template>  
-    <div class="container">
+<template>
+    <div v-if="!$store.state.isMobile" class="container">
       <nav class="breadcrumb breadcrumb-fontsize px-6 py-2" aria-label="breadcrumbs">
         <ul>
           <li><nuxt-link class="" to="/">Home</nuxt-link></li>
@@ -40,6 +40,7 @@ export default {
       if(routeName === "profile") {
         this.locations.push(
           { name: "Profile", path: "" });
+
       }else if(routeName === "blog-page-page") {
           this.locations.push(
             { name: "Blog", path: "/blog/page/1" },
@@ -59,11 +60,11 @@ export default {
           this.locations.push(
             { name: "Blog", path: "/blog/page/1" },
             { name: `「${ this.props }」の検索結果`, path: '' });
-            
+
       }else if(routeName === "works-slug") {
-        this.locations.push(
-          { name: "Profile", path: "/profile" },
-          { name: this.props.fields.title, path: '' });
+          this.locations.push(
+            { name: "Profile", path: "/profile" },
+            { name: this.props.fields.title, path: '' });
       }
     }
   },

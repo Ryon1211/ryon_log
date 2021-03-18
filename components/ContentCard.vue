@@ -3,7 +3,7 @@
     <div v-for="(post, index) in posts" :key="index" class="column is-one-quarter">
       <div class="card pb-3 blog-card-h100p hover-effect-card">
           <nuxt-link :to="`/blog/${post.fields.slug}`">
-            <div class="card-image">
+                      <div class="card-image">
               <figure class="image is-3by1">
                 <img class="is-objectfit" :src="$assetUrl(post.fields.headBanner)" alt="Placeholder image">
               </figure>
@@ -18,7 +18,7 @@
               </div>
             </div>
           </nuxt-link>
-            <div class="content tags mx-4">
+           <div class="content tags mt-2 mb-3 mx-5">
               <span class="tag is-light hover-effect-tag" v-for="tag in post.fields.tags" :key="tag.fields.name">
                   <nuxt-link :to="`/blog/tags/${tag.fields.slug}/1`" class="has-text-dark">{{ tag.fields.name }}</nuxt-link>
               </span>
